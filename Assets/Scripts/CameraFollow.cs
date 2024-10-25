@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform player1;
     public Transform player2;
-    public Vector3 offset = new Vector3(0, 6, 20); // Offset centralizado
+    public Vector3 offset = new Vector3(0, 6, 20);
 
     private void FixedUpdate()
     {
