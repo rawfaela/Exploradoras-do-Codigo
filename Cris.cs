@@ -100,6 +100,6 @@ public class Cris : MonoBehaviour
         
         if (mari==null){
             SceneManager.LoadScene("GameOver");
+        }
     }
-
 }
