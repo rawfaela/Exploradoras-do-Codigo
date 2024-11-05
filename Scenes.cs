@@ -5,16 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public Transform cris;
-    public Transform mari;
-
-    private void Update()
-    {
-        if (cris && mari == null)
-        {
-            Die();
-        }
-    }
     public void Play()
     {
         SceneManager.LoadScene("Game");
@@ -23,10 +13,5 @@ public class Menu : MonoBehaviour
     public void End()
     {
         SceneManager.LoadScene("End");
-    }
-
-    public void Die()
-    {
-        SceneManager.LoadScene("GameOver");
     }
 }
