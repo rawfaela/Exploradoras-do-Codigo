@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Cris : MonoBehaviour
+public class Mari : MonoBehaviour
 {
     public float speed = 5.5f;
     public float jumpForce = 5f;
@@ -13,15 +13,16 @@ public class Cris : MonoBehaviour
     public bool isground;
     private bool hasJumped = false;
     public Transform otherPlayer;
+    public Cris cris;
     public bool fim = false;
-    public Mari mari;
-
+    
     void Start()
     {
         rigd = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
+    // Update is called once per frame
     void Update()
     {
         Move();
@@ -32,11 +33,10 @@ public class Cris : MonoBehaviour
             hasJumped = false;
         }
     }
-
     void Move()
 
     {
-        float teclas = Input.GetAxis("Horizontal2");
+        float teclas = Input.GetAxis("Horizontal");
 
         rigd.velocity = new Vector2(teclas * speed, rigd.velocity.y);
 
@@ -68,7 +68,7 @@ public class Cris : MonoBehaviour
     void Jump()
     {
         // Checa se está no chão e se a tecla de pulo foi pressionada
-        if (isground && Input.GetButtonDown("Jump2") && !hasJumped)
+        if (isground && Input.GetButtonDown("Jump") && !hasJumped)
         {
             rigd.velocity = new Vector2(rigd.velocity.x, jumpForce);
             isground = false;
@@ -95,7 +95,7 @@ public class Cris : MonoBehaviour
             if (normal.x != 0)
             {
                 Debug.Log("!");
-                anim.SetTrigger("die");
+                anim.SetTrigger("die");  //só funciona quando quer
                 Death();
             }
         
@@ -113,7 +113,7 @@ public class Cris : MonoBehaviour
 
     async void Death()
     {
-        Destroy(gameObject, 1f);  //se encosta de lado nao pega a animcao, de cima pega 
+        Destroy(gameObject, 1f);
 
         if (otherPlayer == null)
         {
@@ -121,13 +121,12 @@ public class Cris : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
-
     private void OnTriggerStay2D(Collider2D colisao)
     {
         if (colisao.CompareTag("End"))
         {
             fim = true;
-            if (mari != null && mari.fim == true)
+            if (cris != null && cris.fim == true)
             {
                 SceneManager.LoadScene("Win");
             }
