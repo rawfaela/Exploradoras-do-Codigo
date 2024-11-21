@@ -67,22 +67,22 @@ public class Cris : MonoBehaviour
 
     void Jump()
     {
-        // Checa se est· no ch„o e se a tecla de pulo foi pressionada
+        // Checa se est√° no ch√£o e se a tecla de pulo foi pressionada
         if (isground && Input.GetButtonDown("Jump2") && !hasJumped)
         {
             rigd.velocity = new Vector2(rigd.velocity.x, jumpForce);
             isground = false;
             hasJumped = true;
-            anim.SetInteger("transitions", 2); // Define a animaÁ„o de salto
+            anim.SetInteger("transitions", 2); // Define a anima√ß√£o de salto
         }
     }
 
     void Fall()
     {
-        // Checa se o personagem est· caindo
+        // Checa se o personagem est√° caindo
         if (rigd.velocity.y < 0 && !isground)
         {
-            anim.SetInteger("transitions", 3); // Define a animaÁ„o de queda
+            anim.SetInteger("transitions", 2); // Define a anima√ß√£o de queda
         }
     }
 
