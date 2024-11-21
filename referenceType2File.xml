@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>f7a28848c1c520741b366f8e04b9fef9</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2024-11-18T20:42:30.3560826-03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>585123f5da2aad8438a00392b4815c43</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2024-11-18T20:42:30.3822438-03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cc311a7853092eb4a9a578659dc6637d</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2024-11-18T20:42:30.4042954-03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d0b94e6aaaa2955418039933a72f15cd</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
+    <timeStamp>2024-11-18T20:42:30.4259184-03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f33c16d2c8aa2c946a3dbec6036d5217</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2024-11-18T20:42:30.4489811-03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c8a1b5e5253e43049a73829f4efcdea6</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2024-11-18T20:42:30.4694984-03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>efabb1213075dd14e86d1dce4a524ed4</guid>
+    <fileName>Assets/Scripts/CameraFollow.cs</fileName>
+    <timeStamp>2024-11-17T16:50:01.2914804-03:00</timeStamp>
+    <typeFullName>
+      <string>CameraFollow</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>511f964324f671f43a48f0df58147130</guid>
+    <fileName>Assets/Scripts/Cris.cs</fileName>
+    <timeStamp>2024-11-17T19:42:58.7944593-03:00</timeStamp>
+    <typeFullName>
+      <string>Cris</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>89184b9dfbe46704d96b906a70bff585</guid>
+    <fileName>Assets/Scripts/Enemy.cs</fileName>
+    <timeStamp>2024-11-18T20:32:42.3553141-03:00</timeStamp>
+    <typeFullName>
+      <string>Enemy</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>23da633eeb21d0c4e8898a5f485bd93c</guid>
+    <fileName>Assets/Scripts/GroundCheck.cs</fileName>
+    <timeStamp>2024-11-17T17:54:12.5461163-03:00</timeStamp>
+    <typeFullName>
+      <string>GroundCheck</string>
+      <string>GroundCheck1</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c545304b5e8ca9a4a8bc0a8c9b01a66e</guid>
+    <fileName>Assets/Scripts/GroundCheck1.cs</fileName>
+    <timeStamp>2024-11-17T17:54:02.736756-03:00</timeStamp>
+    <typeFullName>
+      <string>GroundCheck1</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>70e647787a95dbf45818d3b0c8278acd</guid>
+    <fileName>Assets/Scripts/Mari.cs</fileName>
+    <timeStamp>2024-11-18T20:32:38.105113-03:00</timeStamp>
+    <typeFullName>
+      <string>Mari</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>830640be2e61e4b49b52268816527e18</guid>
+    <fileName>Assets/Scripts/Menu.cs</fileName>
+    <timeStamp>2024-11-17T16:37:25.2694704-03:00</timeStamp>
+    <typeFullName>
+      <string>Menu</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+</ArrayOfTypeDate>
