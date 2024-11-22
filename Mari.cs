@@ -22,7 +22,6 @@ public class Mari : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -59,7 +58,7 @@ public class Mari : MonoBehaviour
         }
 
 
-        if (teclas == 0 && isground) // o idle tem que saber se ataca ou colide! 
+        if (teclas == 0 && isground) 
         {
             anim.SetInteger("transitions", 0);
         }
@@ -67,22 +66,20 @@ public class Mari : MonoBehaviour
 
     void Jump()
     {
-        // Checa se está no chão e se a tecla de pulo foi pressionada
         if (isground && Input.GetButtonDown("Jump") && !hasJumped)
         {
             rigd.velocity = new Vector2(rigd.velocity.x, jumpForce);
             isground = false;
             hasJumped = true;
-            anim.SetInteger("transitions", 2); // Define a animação de salto
+            anim.SetInteger("transitions", 2); 
         }
     }
 
     void Fall()
     {
-        // Checa se o personagem está caindo
         if (rigd.velocity.y < 0 && !isground)
         {
-            anim.SetInteger("transitions", 2); // Define a animação de queda
+            anim.SetInteger("transitions", 2);
         }
     }
 
@@ -95,7 +92,7 @@ public class Mari : MonoBehaviour
             if (normal.x != 0)
             {
                 Debug.Log("!");
-                anim.SetTrigger("die");  //só funciona quando quer
+                anim.SetTrigger("die");
                 Death();
             }
         
