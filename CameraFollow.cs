@@ -7,20 +7,20 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform cris;
     public Transform mari;
-    public Vector3 offset = new Vector3(0, 6, 20); // Offset centralizado
+    public Vector3 offset = new Vector3(0, 6, 20);
 
     private void FixedUpdate()
     {
         if (cris == null && mari != null)
         {
-            Vector3 targetPosition = mari.position + offset; // Segue apenas mari
+            Vector3 targetPosition = mari.position + offset; 
             targetPosition.x = Mathf.Clamp(targetPosition.x, -9f, 9f);
             targetPosition.y = Mathf.Clamp(targetPosition.y, -5f, 5f);
             transform.position = Vector3.Lerp(transform.position, targetPosition, 0.1f);
         }
         else if (mari == null && cris != null)
         {
-            Vector3 targetPosition = cris.position + offset; // Segue apenas cris
+            Vector3 targetPosition = cris.position + offset;
             targetPosition.x = Mathf.Clamp(targetPosition.x, -9f, 9f);
             targetPosition.y = Mathf.Clamp(targetPosition.y, -5f, 5f);
             transform.position = Vector3.Lerp(transform.position, targetPosition, 0.1f);
