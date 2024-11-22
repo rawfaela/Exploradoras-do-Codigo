@@ -59,7 +59,7 @@ public class Cris : MonoBehaviour
         }
 
 
-        if (teclas == 0 && isground) // o idle tem que saber se ataca ou colide! 
+        if (teclas == 0 && isground)
         {
             anim.SetInteger("transitions", 0);
         }
@@ -67,22 +67,22 @@ public class Cris : MonoBehaviour
 
     void Jump()
     {
-        // Checa se está no chão e se a tecla de pulo foi pressionada
+  
         if (isground && Input.GetButtonDown("Jump2") && !hasJumped)
         {
             rigd.velocity = new Vector2(rigd.velocity.x, jumpForce);
             isground = false;
             hasJumped = true;
-            anim.SetInteger("transitions", 2); // Define a animação de salto
+            anim.SetInteger("transitions", 2); 
         }
     }
 
     void Fall()
     {
-        // Checa se o personagem está caindo
+
         if (rigd.velocity.y < 0 && !isground)
         {
-            anim.SetInteger("transitions", 2); // Define a animação de queda
+            anim.SetInteger("transitions", 2); 
         }
     }
 
@@ -113,7 +113,7 @@ public class Cris : MonoBehaviour
 
     async void Death()
     {
-        Destroy(gameObject, 1f);  //se encosta de lado nao pega a animcao, de cima pega 
+        Destroy(gameObject, 1f);
 
         if (otherPlayer == null)
         {
